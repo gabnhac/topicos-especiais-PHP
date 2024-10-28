@@ -1,30 +1,123 @@
 body {
-    background-color: darksalmon;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
 
-    margin: 0;
-    padding: 0;
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d87093;
+  margin: 20px 0;
 }
 
 .lista-rosquinhas {
-    flex: 1;
-    display: flex;
-    
-    align-items: center;
-    justify-content: space-around;
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
 }
 
 .rosquinha-item {
-    background-color: white;
-
-    border-radius: 10px;
-
-    width: 300px;
-    height: 250px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-
+  background-color: #d87093;
+  border: 2px solid #c0577a;
+  border-radius: 10px;
+  width: 220px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
+
+.rosquinha-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.menu-deletar {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 10px;
+}
+
+.btn-confirmar, .btn-cancelar {
+  background-color: #d87093;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-confirmar:hover {
+  background-color: #3cb371;
+}
+
+.btn-cancelar:hover {
+  background-color: #ff6347;
+}
+
+.edit-menu {
+  padding: 15px;
+}
+
+.form-edit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-edit input {
+  border: 2px solid #d87093;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+}
+
+.div-criar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+#btn-criar {
+  background-color: #d87093;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+#btn-criar:hover {
+  background-color: #c0577a;
+}
+
+#btn-sabor {
+  background: none;
+  border: none;
+}
+
+#btn-sabor:hover {
+  color: #ffffff;
+}
+

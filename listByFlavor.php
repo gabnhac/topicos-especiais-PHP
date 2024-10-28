@@ -16,15 +16,15 @@ $rosquinhaRep = new RosquinhaRepository($connection);
 
 <body>
     <div class="title">
-        <h1>Rosquinhas na Promoção!</h1>
+        <h1>Todas as rosquinhas de <?php echo $_POST['sabor'] ?></h1>
     </div>
     <div class="lista-rosquinhas">
         <?php
-        $rosquinhaRep->listRosquinhasLink();
+        $rosquinhaRep->listRosquinhasByFlavor($_POST['sabor']);
         ?>
     </div>
     <div class="div-criar">
-        <button id="btn-criar" onclick="window.location.href='createRosquinha.php'">Criar</button>
+        <button id="btn-criar" onclick="window.location.href='index.php'">Voltar para Loja</button>
     </div>
 </body>
 
